@@ -1,3 +1,3 @@
 library responsive_card;
 
-export 'src/responsiveCard.dart';
+export 'src/responsive_card.dart';

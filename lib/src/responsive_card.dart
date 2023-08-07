@@ -9,8 +9,10 @@ class ResponsiveCard extends StatefulWidget {
   final EdgeInsets? padding;
   final Flex? leadingFlex;
   final Flex? titleFlex;
-
-  const ResponsiveCard({super.key,  this.screenWidth, this.titleGap, this.leading,  this.action,  this.title,  this.subTitle, this.padding, this.leadingFlex, this.titleFlex});
+  final EdgeInsets? margin;
+  final double? elevation;
+  final Color? bgColor;
+  const ResponsiveCard({super.key,  this.screenWidth, this.titleGap, this.leading,  this.action,  this.title,  this.subTitle, this.padding, this.leadingFlex, this.titleFlex, this.margin, this.elevation, this.bgColor});
 
 
 
@@ -24,6 +26,9 @@ class _ResponsiveCardState extends State<ResponsiveCard> {
     var screenWidth = MediaQuery.of(context).size.width;
     var givenWidth = widget.screenWidth ?? 800;
     return Card(
+      margin: widget.margin?? const EdgeInsets.all(15.0),
+      elevation: widget.elevation,
+      color: widget.bgColor,
       child: Padding(
         padding: widget.padding?? const EdgeInsets.all(15.0),
         child:screenWidth>givenWidth? Row(
