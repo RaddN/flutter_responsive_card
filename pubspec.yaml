@@ -2,7 +2,7 @@ name: responsive_card
 description: responsive card widget for cross platform
 version: 0.0.1
 homepage: https://github.com/RaddN/flutter_responsive_card.git
-
+repository: https://github.com/RaddN/flutter_responsive_card.git
 environment:
   sdk: '>=2.19.6 <3.0.0'
   flutter: ">=1.17.0"
