@@ -1,6 +1,6 @@
 name: responsive_card
 description: The responsive_card Flutter package provides a responsive card widget that adapts its layout based on screen width, ideal for showcasing content in a visually appealing and responsive manner.
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/RaddN/flutter_responsive_card.git
 repository: https://github.com/RaddN/flutter_responsive_card.git
 environment:

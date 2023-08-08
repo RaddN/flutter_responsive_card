@@ -15,12 +15,17 @@ Responsive Card Widget for cross platform
 
 ## Features
 
-<img src="https://github.com/RaddN/flutter_responsive_card/blob/main/assets/in%20mobile.png" alt="in mobile">
-<img src="https://github.com/RaddN/flutter_responsive_card/blob/main/assets/in%20desktop.png" alt="in mobile">
+<img src="https://raw.githubusercontent.com/RaddN/flutter_responsive_card/main/assets/in%20mobile.png" alt="in mobile">
+<img src="https://raw.githubusercontent.com/RaddN/flutter_responsive_card/main/assets/in%20desktop.png" alt="in desktop">
 
 ## Getting started
-add the latest version and pub get
-
+add latest version
+```
+flutter pub add responsive_card
+```
+```
+pub get
+```
 ## Usage
 
 add latest version
