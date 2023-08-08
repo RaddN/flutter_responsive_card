@@ -45,29 +45,29 @@ class _ResponsiveCardState extends State<ResponsiveCard> {
 
   List<Widget> children(screenWidth,givenWidth,titleGap,leading,title,subTitle,action,leadingFlex,titleFlex) {
     return [
-      screenWidth>givenWidth?Expanded(flex: leadingFlex?? 3, child:leading):Stack(
+      screenWidth>givenWidth?Expanded(flex: leadingFlex?? 3, child:leading??Text("")):Stack(
         children: [
-          leading,
-          action
+          leading??Text(""),
+          action??Text("")
         ],
       ),
-      SizedBox(width: titleGap,height: titleGap,),
+      SizedBox(width: titleGap??10,height: titleGap??10,),
       if(screenWidth>givenWidth)
         Expanded(
           flex:titleFlex?? 6,
           child: Column(
             children: [
-              title,
-              subTitle
+              title??Text(""),
+              subTitle??Text("")
             ],
           ),
         ),
       if(screenWidth>800)
-        Expanded(child: action),
+        Expanded(child: action??Text("")),
       if(screenWidth<givenWidth)
-        title,
+        title??Text(""),
       if(screenWidth<givenWidth)
-        subTitle,
+        subTitle??Text(""),
     ];
   }
 }
